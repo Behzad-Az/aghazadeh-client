@@ -2,8 +2,7 @@ import React, { FC, useEffect } from 'react';
 import {
   Container,
   Grow,
-  Grid,
-  Typography
+  Grid
 } from '@mui/material';
 
 import Intro from './Intro';

@@ -1,6 +1,5 @@
 import * as api from '../../api';
 import { Posts, Post } from '../../types/posts';
-import { AnyAction } from 'redux';
 
 export const REWRITE_ALL_POSTS = 'REWRITE_ALL_POSTS';
 export const REWRITE_A_POST = 'REWRITE_A_POST';
@@ -57,7 +56,7 @@ export const fetchPosts = (searchPhrase: string | null) => async (dispatch: any)
       }));
     }
     else {
-      throw `Server returned unexpected response structure. Status ${status}`;
+      throw new Error(`Server returned unexpected response structure. Status ${status}`);
     }
   } 
   catch (error: any) {
@@ -78,7 +77,7 @@ export const createPost = (newPost: Post) => async (dispatch: any) => {
       dispatch(addToPosts(data));
     }
     else {
-      throw `Server returned unexpected response structure. Status ${status}`;
+      throw new Error(`Server returned unexpected response structure. Status ${status}`);
     }
   } 
   catch (error) {
