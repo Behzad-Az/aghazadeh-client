@@ -15,22 +15,18 @@ const AppHeaderBar: FC<Props> = () : JSX.Element => {
       color='inherit'
       sx={{
         borderRadius: '15px',
-        margin: '30px 0',
+        margin: '20px 0',
+        padding: '10px',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
-
-      <Typography 
-        variant='h3' 
-        align='center'
-        color='InfoText'
-      >
+      <Typography variant='h3' align='center'color='InfoText'>
         Report an #Aghazadeh
       </Typography>
-      <img src={iran} alt='iran' height='60' style={{ marginRight: '10px', marginLeft: '15px' }} />
+      <img src={iran} alt='iran' height='60' style={{ marginLeft: '15px' }} />
     </AppBar>
   );
 };
