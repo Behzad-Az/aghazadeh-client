@@ -17,6 +17,7 @@ import FileBase from 'react-file-base64';
 import { useAppDispatch } from '../../store/sotre';
 import { createPost } from '../../store/actions/posts';
 import { Post } from '../../types/posts';
+import NavigationBar from '../../components/NavigationBar';
 
 interface Props {};
 
@@ -85,6 +86,8 @@ const Report: FC<Props> = () : JSX.Element => {
 
   return (
     <Container maxWidth='lg'>
+
+      <NavigationBar />
 
       <Typography variant='h4' color='whitesmoke' paddingBottom='15px'>
         Report a Rogue Connection
@@ -250,6 +253,8 @@ const Report: FC<Props> = () : JSX.Element => {
 
         </Box>
       </Paper>
+      
+      <NavigationBar />
 
     </Container>
   );

@@ -13,6 +13,8 @@ import { useAppDispatch } from '../../store/sotre';
 import { fetchPosts } from '../../store/actions/posts';
 import PostCardList from '../../components/Posts/PostCardList';
 import RightSideBar from './RightSideBar';
+import NavigationBar from '../../components/NavigationBar';
+import AppHeaderBar from '../../components/AppHeaderBar';
 
 interface Props {};
 
@@ -25,7 +27,8 @@ const Home: FC<Props> = () : JSX.Element => {
 
   return (
     <Grow in>
-      <Container>
+      <Container maxWidth='lg'>
+        <AppHeaderBar />
         <Intro />
         <SearchBar />
         <Grid 
@@ -49,6 +52,7 @@ const Home: FC<Props> = () : JSX.Element => {
             <RightSideBar />
           </Grid>
         </Grid>
+        <NavigationBar />
       </Container>
     </Grow>
   );
