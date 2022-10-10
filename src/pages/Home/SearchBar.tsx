@@ -18,12 +18,13 @@ const SearchBar: FC<Props> = () : JSX.Element => {
   return (
     <Box
       component='form'
-      maxWidth='400px'
+      // maxWidth='400px'
       alignContent='center'
       noValidate
       autoComplete='off'
       display='flex'
       margin='auto'
+      paddingBottom='15px'
     >
       <TextField
         id='filled-required'

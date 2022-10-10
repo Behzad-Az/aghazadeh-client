@@ -29,7 +29,6 @@ const Home: FC<Props> = () : JSX.Element => {
       <Container maxWidth='lg'>
         <AppHeaderBar />
         <Intro />
-        <SearchBar />
         <Grid 
           container 
           spacing={2}
@@ -39,12 +38,12 @@ const Home: FC<Props> = () : JSX.Element => {
             md: 'row',
             lg: 'row'
           }}
-          paddingTop='20px'
         >
           <Grid item xs={12} sm={12} md={2} lg={3} display='flex' justifyContent='center' alignItems={{ sm: 'center', md: 'flex-start'}}>
             <LeftSideBar />
           </Grid>
           <Grid item xs={12} sm={10} md={8} lg={6}>
+            <SearchBar />
             <PostCardList />
           </Grid>
           <Grid item xs={12} sm={12} md={2} lg={3} display='flex' justifyContent='center' alignItems={{ sm: 'center', md: 'flex-start'}}>

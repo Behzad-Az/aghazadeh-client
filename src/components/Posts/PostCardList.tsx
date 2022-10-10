@@ -22,7 +22,7 @@ const PostCardList: FC<Props> = () : JSX.Element => {
   }
 
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={2}>
       {
         posts.content.map(post => (
           <Grid key={post._id} item xs={12}>

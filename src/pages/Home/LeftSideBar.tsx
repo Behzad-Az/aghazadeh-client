@@ -37,7 +37,7 @@ const LeftSideBar: FC<Props> = () : JSX.Element => {
     {
       color: 'red',
       text: 'Freedom',
-      marginBottom: HASHTAG_SET_MARGIN_BTM
+      marginBottom: 0
     }
   ];
   return (

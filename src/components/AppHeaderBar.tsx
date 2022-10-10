@@ -23,7 +23,7 @@ const AppHeaderBar: FC<Props> = () : JSX.Element => {
         alignItems: 'center'
       }}
     >
-      <Typography variant='h3' align='center'color='InfoText'>
+      <Typography variant='h4' align='center'color='InfoText'>
         Report an #Aghazadeh
       </Typography>
       <img src={iran} alt='iran' height='60' style={{ marginLeft: '15px' }} />
