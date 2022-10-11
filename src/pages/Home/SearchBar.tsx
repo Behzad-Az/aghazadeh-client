@@ -14,14 +14,9 @@ interface Props {};
 const SearchBar: FC<Props> = () : JSX.Element => {
   const dispatch = useAppDispatch();
   const [searchPhrase, setSearchPhrase] = useState<string>('');
-
   return (
     <Box
-      component='form'
-      // maxWidth='400px'
       alignContent='center'
-      noValidate
-      autoComplete='off'
       display='flex'
       margin='auto'
       paddingBottom='15px'
