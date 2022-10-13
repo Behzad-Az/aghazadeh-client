@@ -23,7 +23,7 @@ const SearchBar: FC<Props> = () : JSX.Element => {
     >
       <TextField
         id='filled-required'
-        label='Search'
+        label='Search by name or location'
         variant='filled'
         color='info'
         sx={{
